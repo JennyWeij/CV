@@ -5,18 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <style href="./style.css" rel="stylesheet"></style>
+    <script src="https://kit.fontawesome.com/b66f49be9e.js" crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet"></link>
     <script src="./main.js"></script>
 </head>
 <body>
-    <div>
-        <p>Hej! Mitt namn är Jenny Weijland.
-            Jag studerar till Front End Developer på
-            Medieinstitutet.
-            Välkommen till mitt digitala CV.
-            Klicka på knappen så kör vi igång!
-        </p>
+
+    <div class="banner">
+        <div class="grid-1-column">
+            <div class="contact">
+               <button class="emailContact" id="mail">jennyweij@outlook.com</button>
+                <i class="fa-brands fa-github"></i> <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="textBox">
+                    <img class="pictureJenny" src="./Pictures/jennybeskärd.jpg" alt="picture of me">
+                    <h4>Hej! Mitt namn är Jenny Weijland</h4>
+                </div>
+            </div>
+        </div>
     </div>
-    <button>Klicka här!</button>
+
+    <div class="grid-2-columns">
+        <div>
+            <h1>Utbildning</h1>
+            <div class="accordion-education">
+                <div class="accordionItem" id="educationOne">
+                    <a class="accordionLink" href="#educationOne">
+                        <p>Front End Developer, Medieinstitutet<i class="fa-light fa-down"></i></p>
+                        
+                    </a>
+                    <div class="medieinstitutet">
+                        <p>Utbildningen Front End Developer ger oss studenter kompetensen att 
+                            använda den webbteknik som krävs för att producera avancerade webbplatser. 
+                            Vi tränas i allt från JavaScript, versionshantering, ramverk, html, CSS, 
+                            webbdesign och användbarhet/UX. Utbildningen inkluderar allt från 
+                            programmeringsspråk till kunskaper i utveckling av mobila webbapplikationer.</p>
+                    </div>
+                </div>
+
+                <div class="accordionItem" id="educationTwo">
+                    <a class="accordionLink" href="#educationTwo"> 
+                        <p>Medie- och kommunikationsvetenskap, Göteborgs Universitet<i class="fa-light fa-down"></i></p>
+                        
+                    </a>
+                    <div class="mediaAndCommunication">
+                        <p>Utbildningen ger både teoretisk och praktisk kunskap, 
+                            liksom insikter om dagens nya mångfasetterade medievärld. 
+                            Du får jobba med människor, medier och kommunikation ur olika perspektiv. 
+                            Du utvecklar din kreativitet och din argumentationsteknik och genom 
+                            att du lär dig olika publicitets- och kommunikationsstrategier övar 
+                            du även upp din analytiska förmåga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>Erfarenhet</h1>
+            <div class="accordion-experience">
+                <div class="accordionItem" id="experienceOne">
+                    <a class="accordionLink" href="#experienceOne">
+                        <p>Administratör, Chalmers</p>
+                    </a>
+                    <div class="chalmers">
+                        <p>Utbildningen Front End Developer ger oss studenter kompetensen att 
+                            använda den webbteknik som krävs för att producera avancerade webbplatser. 
+                            Vi tränas i allt från JavaScript, versionshantering, ramverk, html, CSS, 
+                            webbdesign och användbarhet/UX. Utbildningen inkluderar allt från 
+                            programmeringsspråk till kunskaper i utveckling av mobila webbapplikationer.</p>
+                    </div>
+                </div>
+            </div>
+        </        
+    </div>
+
 </body>
 </html>

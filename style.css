@@ -1,1 +1,57 @@
 /* responsiv ner till 360px, tänk även på stora skärmar. 3 storlekar räcker */
+body {
+    background-image: url(./Pictures/nightSky.jpg);
+    background-color: rgb(19, 19, 86);
+    object-fit: cover;
+    color: white;
+}
+
+.grid-1-column {
+    width: auto;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.contact {
+    margin-top: 0;
+    width: auto;
+}
+
+.emailContact {
+    color: white;
+    background-color: rgb(63, 63, 152);
+    border-radius: 2rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
+}
+
+.textBox {
+    margin-left: 38rem;
+    margin-top: 1rem;
+}
+
+.grid-2-columns {
+    margin: 2rem auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.accordionItem {
+    background-color: rgb(20, 20, 74);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.accordionLink {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.fa-solid {
+    background-color: red;
+    height: 2rem;
+    width: 2rem;
+}
