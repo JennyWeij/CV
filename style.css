@@ -36,16 +36,25 @@ body {
 }
 
 .textBox {
-    position: relative;
+    position: absolute;
     text-align: center;
 } 
 
 .nameBig {
     font-size: 7rem;
+    margin-bottom: 1.5rem;
 }
 
 .pictureJenny {
     border-radius: 10rem;
+}
+
+.infoText {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
 }
 
 .grid-2-columns {
@@ -54,39 +63,6 @@ body {
     display: grid;
     position: relative;
     grid-template-columns: 50% 50%;
-}
-
-.accordion {
-    max-width: 100%;
-}
-
-.accordion .contentBox {
-    position: relative;
-    margin: 10px 20px;
-}
-
-.accordion .contentBox .label {
-    position: relative;
-    padding: 10px;
-    background-color: rgb(12, 12, 87);
-    cursor: pointer;
-}
-
-.accordion .contentBox .label::before {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-}
-
-.accordion .contentBox .content {
-    position: relative;
-    padding: 10px;
-    background-color: black;
-    height: 0;
-    overflow: hidden;
 }
 
 
