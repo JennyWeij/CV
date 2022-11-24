@@ -15,6 +15,11 @@ body {
     color: white;
 }
 
+.links {
+    color: white;
+    text-decoration: none;
+}
+
 .grid-1-column {
     width: auto;
     display: grid;
