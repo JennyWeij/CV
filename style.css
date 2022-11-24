@@ -1,4 +1,13 @@
 /* responsiv ner till 360px, tänk även på stora skärmar. 3 storlekar räcker */
+/* Reusable classes:  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font */
+}
+
 body {
     background-image: url(./Pictures/nightSky.jpg);
     background-color: rgb(19, 19, 86);
@@ -14,44 +23,74 @@ body {
 
 .contact {
     margin-top: 0;
-    width: auto;
-}
-
-.emailContact {
-    color: white;
-    background-color: rgb(63, 63, 152);
-    border-radius: 2rem;
+    width: auto;    
     padding: 0.3rem;
-    margin: 0.5rem;
+    margin: 5rem;
+    justify-content: center;
 }
 
 .textBox {
-    margin-left: 38rem;
-    margin-top: 1rem;
+    position: relative;
+    text-align: center;
+} 
+
+.nameBig {
+    font-size: 7rem;
+}
+
+.pictureJenny {
+    border-radius: 10rem;
 }
 
 .grid-2-columns {
     margin: 2rem auto;
     width: auto;
     display: grid;
+    position: relative;
     grid-template-columns: 50% 50%;
 }
 
-.accordionItem {
-    background-color: rgb(20, 20, 74);
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-    margin-right: 1rem;
+.accordion {
+    max-width: 100%;
 }
 
-.accordionLink {
-    color: white;
-    text-decoration: none;
-    width: 100%;
+.accordion .contentBox {
+    position: relative;
+    margin: 10px 20px;
 }
 
-.fa-solid {
-    background-color: red;
-    height: 2rem;
-    width: 2rem;
+.accordion .contentBox .label {
+    position: relative;
+    padding: 10px;
+    background-color: rgb(12, 12, 87);
+    cursor: pointer;
 }
+
+.accordion .contentBox .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion .contentBox .content {
+    position: relative;
+    padding: 10px;
+    background-color: black;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+/* Tablet
+@media (max-width: px) {
+
+}
+
+Mobile */
+/* @media (max-width: px) {
+    
+} */
