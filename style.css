@@ -11,6 +11,7 @@
 body {
     background-image: url(./Pictures/nightSky.jpg);
     background-color: rgb(19, 19, 86);
+    background-repeat: no-repeat;
     object-fit: cover;
     color: white;
 }
@@ -30,7 +31,7 @@ body {
     margin-top: 0;
     width: auto;    
     padding: 0.3rem;
-    margin: 5rem;
+    margin: 0.8rem;
     justify-content: center;
 }
 
@@ -86,9 +87,8 @@ body {
     background-color: black;
     height: 0;
     overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
 }
+
 
 /* Tablet
 @media (max-width: px) {
