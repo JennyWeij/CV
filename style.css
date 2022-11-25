@@ -1,19 +1,25 @@
 /* responsiv ner till 360px, tänk även på stora skärmar. 3 storlekar räcker */
 /* Reusable classes:  */
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     /* font */
 }
 
 body {
-    background-image: url(./Pictures/nightSky.jpg);
-    background-color: rgb(19, 19, 86);
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background-color: #181D4A;
     color: white;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hero hero"
+    "mainLeft mainRight"
+    "footer footer";
 }
 
 .links {
@@ -21,24 +27,13 @@ body {
     text-decoration: none;
 }
 
-.grid-1-column {
-    width: auto;
-    display: grid;
-    grid-template-columns: 100%;
-}
-
 .contact {
     margin-top: 0;
-    width: auto;    
+    width: auto;   /* ta bort?  */
     padding: 0.3rem;
     margin: 0.8rem;
     justify-content: center;
 }
-
-.textBox {
-    position: absolute;
-    text-align: center;
-} 
 
 .nameBig {
     font-size: 7rem;
@@ -50,28 +45,69 @@ body {
 }
 
 .infoText {
-    height: auto;
+    height: auto; /* ta bort?  */
     width: 100%;
     padding: 1rem;
     margin-top: 2rem;
     justify-content: center;
 }
 
-.grid-2-columns {
-    margin: 2rem auto;
-    width: auto;
+.hero {
+    grid-area: hero;
+}
+
+.mainLeft {
+    grid-area: mainLeft;
+}
+
+.mainRight {
+    grid-area: mainRight;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* .title {
+    grid-column-start: 1; /*ett annat sätt att skriva det på: grid-column: 1 / 3; eller: grid-column-end: span 2*/
+    /* grid-column-end: 3; */
+/* } */
+
+
+
+.swedenPicture {
+    height: 25%;
+}
+
+
+/* Tablet */
+/* @media (max-width: 800px) 
+{
+    .grid {
     display: grid;
-    position: relative;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hero hero"
+    "mainLeft mainLeft"
+    "mainRight mainRight"
+    "footer footer";
+    }
 }
 
-
-/* Tablet
-@media (max-width: px) {
-
-}
-
-Mobile */
-/* @media (max-width: px) {
-    
+/* Mobile 
+@media (max-width: 360px) 
+{
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hero hero"
+    "mainLeft mainLeft"
+    "mainRight mainRight"
+    "footer footer";
+    }
 } */
+
+    /*whitespace på extra stor skärm?*/
