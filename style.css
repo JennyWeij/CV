@@ -25,8 +25,9 @@ body {
 }
 
 .links {
-    color: white;
+    color: #83A5B8;
     text-decoration: none;
+    text-shadow: #83A5B8 1px 0 5px;
 }
 
 .contact {
@@ -39,6 +40,7 @@ body {
 .nameBig {
     font-size: 7rem;
     margin-bottom: 1.5rem;
+    text-shadow: black 1px 0 10px;
 }
 
 .pictureJenny {
@@ -85,8 +87,15 @@ body {
 
 
 
-.swedenPicture {
-    height: 25%;
+button {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 20%;
+    background-color:#83A5B8;
+    color: black;
+    border-radius: 10rem;
+    box-shadow: black 1px 0 10px;
 }
 
 
