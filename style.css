@@ -15,6 +15,7 @@ body {
 
 .grid {
     display: grid;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -33,7 +34,6 @@ body {
     width: auto;   /* ta bort?  */
     padding: 0.3rem;
     margin: 0.8rem;
-    justify-content: center;
 }
 
 .nameBig {
@@ -49,14 +49,12 @@ body {
     height: auto; /* ta bort?  */
     width: 100%;
     padding: 1rem;
-    margin-top: 2rem;
-    justify-content: center;
+    margin-top: 1rem;
     font-size: 1.2rem;
 }
 
 .hero {
     grid-area: hero;
-    justify-self: center;
 }
 
 .mainLeft {
@@ -69,6 +67,15 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.center {
+    align-self: center;
+    justify-self: center;
 }
 
 /* .title {
