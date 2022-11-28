@@ -50,8 +50,6 @@ body {
 .infoText {
     height: auto; /* ta bort?  */
     width: 100%;
-    padding: 1rem;
-    margin-top: 1rem;
     font-size: 1.2rem;
 }
 
@@ -61,6 +59,8 @@ body {
 
 .mainLeft {
     grid-area: mainLeft;
+    justify-self: center;
+    margin-top: 4rem;
 }
 
 .mainRight {
