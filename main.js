@@ -24,13 +24,14 @@ function openMyMail () {
 }
 
 /**Funktion som skapar och fadear in en bild som visar mina jobberfarenheter */
-function openMyExperienceEducation () {
-const img = document.createElement("educationPicture");
+function openMyPictureEducation () {
+    const img1 = document.createElement("educationPicture");
 
 }
 
 /**Funktion som skapar och fadear in en bild som visar mina utbildningar */
-function openMyExperienceExperience () {
-const img = document.createElement("experiencePicture");
+function openMyPictureExperience () {
+    const img2 = document.createElement("experiencePicture");
+    img2.classList = "explainText";
 
 }

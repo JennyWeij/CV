@@ -35,6 +35,8 @@ body {
     width: auto;   /* ta bort?  */
     padding: 0.3rem;
     margin: 0.8rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .nameBig {
