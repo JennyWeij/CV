@@ -17,11 +17,11 @@ body {
     display: grid;
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "hero hero"
     "mainLeft mainRight"
-    "mainLeft mainRight"
+    "mainLeftBottom mainRightBottom"
     "footer footer";
 }
 
@@ -67,6 +67,26 @@ body {
 
 .mainRight {
     grid-area: mainRight;
+}
+
+
+.mainLeftBottom {
+    grid-area: mainLeftBottom;
+    justify-self: center;
+    margin-top: 4rem;
+}
+
+.mainRightBottom {
+    grid-area: mainRightBottom;
+}
+
+.bottomColor {
+    color: #707070;
+    opacity: 40%;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .footer {
