@@ -4,6 +4,15 @@
 // 4. 
 window.addEventListener("DOMContentLoaded");
 
+
+// function typeMyName () {
+//     const typed = new typed(".auto-type", {
+//     string: ["Jenny Weijland"],
+//     typeSpeed: 150,
+//     loop: false,
+// })
+// }
+
 /**Funktion som öppnar min sida på GitHub */
 function openMyGitHub () {
     const openGitHub = document.getElementById("gitHubLink");

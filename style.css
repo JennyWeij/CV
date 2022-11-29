@@ -21,6 +21,7 @@ body {
     grid-template-areas: 
     "hero hero"
     "mainLeft mainRight"
+    "mainLeft mainRight"
     "footer footer";
 }
 
@@ -50,7 +51,6 @@ body {
 }
 
 .infoText {
-    height: auto; /* ta bort?  */
     width: 100%;
     font-size: 1.2rem;
 }
