@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font */
 }
 
 body {
@@ -33,7 +32,6 @@ body {
 
 .contact {
     margin-top: 0;
-    width: auto;   /* ta bort?  */
     padding: 0.3rem;
     margin: 0.8rem;
     display: flex;
