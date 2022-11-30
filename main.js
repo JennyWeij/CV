@@ -1,31 +1,48 @@
 window.addEventListener("DOMContentLoaded");
 
-const faders = document.querySelectorAll(".fade-in");
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
 
-const appearOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 50px 0px"
-};
-
-const appearOnScroll = new IntersectionObserver
-(function(
-    entries, 
-    appearOnScroll
-) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }else {
+            entry.target.classList.add("remove");
         }
     });
-}, 
-appearOptions);
+});
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-})
+
+
+
+// const faders = document.querySelectorAll(".fade-in");
+
+// const appearOptions = {
+//     threshold: 0.25,
+//     rootMargin: "0px 0px 50px 0px"
+// };
+
+// const appearOnScroll = new IntersectionObserver
+// (function(
+//     entries, 
+//     appearOnScroll
+// ) {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             return;
+//         } else {
+//             entry.target.classList.add("appear");
+//             appearOnScroll.unobserve(entry.target);
+//         }
+//     });
+// }, 
+// appearOptions);
+
+// faders.forEach(fader => {
+//     appearOnScroll.observe(fader);
+// })
 
 
 // const button = document.querySelectorAll(".btn")
@@ -44,15 +61,6 @@ faders.forEach(fader => {
 // button.forEach(button => {
 //     observer.observe(button)
 // })
-
-// function typeMyName () {
-//     const typed = new typed(".auto-type", {
-//     string: ["Jenny Weijland"],
-//     typeSpeed: 150,
-//     loop: false,
-// })
-// }
-
 
 
 /**Funktion som skapar och fadear in en bild som visar mina jobberfarenheter */
