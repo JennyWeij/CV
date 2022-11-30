@@ -51,7 +51,7 @@ body {
 }
 
 .infoText {
-    width: 100%;
+    width: auto;
     font-size: 1.2rem;
 }
 
@@ -68,7 +68,6 @@ body {
 .mainRight {
     grid-area: mainRight;
 }
-
 
 .mainLeftBottom {
     grid-area: mainLeftBottom;
@@ -101,14 +100,22 @@ body {
     justify-self: center;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
 /* .title {
     grid-column-start: 1; /*ett annat sätt att skriva det på: grid-column: 1 / 3; eller: grid-column-end: span 2*/
     /* grid-column-end: 3; */
 /* } */
 
 
-
-button {
+/* .btn {
     font-family: 'Playfair Display SC', serif;
     font-size: 1.2rem;
     height: 3rem;
@@ -117,37 +124,60 @@ button {
     color: black;
     border-radius: 10rem;
     box-shadow: black 1px 0 10px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 200ms;
 }
+
+.btn.show {
+    transform: translateX(0);
+    opacity: 1;
+} */
+
+
 
 
 /* Tablet */
-/* @media (max-width: 800px) 
+@media (max-width: 900px) 
 {
     .grid {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "hero hero"
+    "hero"
     "mainLeft mainRight"
     "mainLeftBottom mainRightBottom"
-    "footer footer"
     }
+/* 
+    .nameBig, .pictureJenny {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: black 1px 0 10px;
+    justify-self: auto;
+    margin-left: 2rem;
+    } */
 }
+    
 
-/* Mobile 
+/* Mobile */
 @media (max-width: 360px) 
 {
     .grid {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "hero hero"
-    "mainLeft mainRight"
-    "mainLeftBottom mainRightBottom"
-    "footer footer"
+    "hero"
+    "mainLeft"
+    "mainRight"
+    "mainLeftBottom"
+    "manRightBottom"
+    "footer"
     }
-} */
 
-    /*whitespace på extra stor skärm?*/
+    .nameBig {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: black 1px 0 10px;
+    }
+} 
+    /* whitespace på extra stor skärm? */
