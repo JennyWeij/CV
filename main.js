@@ -14,10 +14,16 @@ window.addEventListener("DOMContentLoaded");
 //     });
 // });
 
+// let options = {
+//     root: document.querySelector('#scrollArea'),
+//     rootMargin: '0px',
+//     threshold: 1.0
+//   }
 
-const faders = document.querySelectorAll(".fade-in");
+const faders = document.querySelectorAll(".hidden");
 
 const appearOptions = {
+    root: null,
     threshold: 0.25,
     rootMargin: "0px 0px 50px 0px"
 };
@@ -31,7 +37,7 @@ const appearOnScroll = new IntersectionObserver
         if (!entry.isIntersecting) {
             return;
         } else {
-            entry.target.classList.add("appear");
+            entry.target.classList.add(".fade-in");
             appearOnScroll.unobserve(entry.target);
         }
     });

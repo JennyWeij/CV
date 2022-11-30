@@ -22,23 +22,7 @@ body {
     "mainLeftBottom mainRightBottom"
 }
 
-.links {
-    display: flex;
-    color: #83A5B8;
-    text-decoration: none;
-    text-shadow: #83A5B8 1px 0 5px;
 
-}
-
-.contact {
-    padding: 0.3rem;
-    margin: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    
-}
 
 .nameBig {
     font-size: 7rem;
@@ -100,6 +84,16 @@ body {
     grid-area: mainRightBottom;
 }
 
+.footer {
+    grid-area: footer;
+    display: flex;
+}
+
+.links {
+    color: #83A5B8;
+    text-decoration: none;
+    text-shadow: #83A5B8 1px 0 5px;
+}
 .bottomColor {
     color: #707070;
 }
@@ -108,12 +102,12 @@ body {
     font-weight: bold;
 }
 
-.fade-in {
+.hidden {
     opacity: 0;
     transition: opacity 250ms ease-in;
 }
 
-.fade-in.appear {
+.fade-in {
     opacity: 1;
 }
 
@@ -128,15 +122,17 @@ body {
 {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "hero"
     "mainLeft mainRight"
     "mainLeftBottom mainRightBottom"
+    "footer footer"
     }
 
     .infoText {
         font-size: 1rem;
+        max-width: 90%;
     }
 
     .exp {
@@ -164,13 +160,14 @@ body {
 {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 0.7fr 0.2fr 1fr;
+    grid-template-rows: 1fr 0.2fr 0.7fr 0.2fr 1fr 0.3;
     grid-template-areas: 
     "hero"
     "mainLeft"
     "mainRight"
     "mainLeftBottom"
     "manRightBottom"
+    "footer"
     }
 
     .nameBig {
@@ -181,6 +178,7 @@ body {
 
     .infoText {
     font-size: 0.8rem;
+    max-width: 70%;
     }
 } 
     /* whitespace på extra stor skärm? */
