@@ -15,8 +15,6 @@ window.addEventListener("DOMContentLoaded");
 // });
 
 
-
-
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {

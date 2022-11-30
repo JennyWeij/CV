@@ -12,51 +12,70 @@ body {
 }
 
 
-.grid {
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "hero hero"
     "mainLeft mainRight"
     "mainLeftBottom mainRightBottom"
-    "footer footer";
 }
 
 .links {
+    display: flex;
     color: #83A5B8;
     text-decoration: none;
     text-shadow: #83A5B8 1px 0 5px;
+
 }
 
 .contact {
-    margin-top: 0;
     padding: 0.3rem;
     margin: 0.8rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+    
 }
 
 .nameBig {
     font-size: 7rem;
     margin-bottom: 1.5rem;
-    text-shadow: black 1px 0 10px;
+    text-shadow: black 4px 0 5px;
 }
 
 .pictureJenny {
-    border-radius: 10rem;
+    box-shadow: 30px -15px #83A5B8;
 }
 
 .infoText {
-    width: 70%;
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    max-width: 80%;
+}
+
+.exp {
+    font-size: 2rem;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero {
     grid-area: hero;
-    display: grid;
-    place-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainLeft {
@@ -74,6 +93,7 @@ body {
     grid-area: mainLeftBottom;
     justify-self: center;
     margin-top: 4rem;
+    height: auto;
 }
 
 .mainRightBottom {
@@ -86,10 +106,6 @@ body {
 
 .bold {
     font-weight: bold;
-}
-
-.footer {
-    grid-area: footer;
 }
 
 .fade-in {
@@ -110,16 +126,30 @@ body {
 /* Tablet */
 @media (max-width: 900px) 
 {
-    .grid {
+    .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "hero"
     "mainLeft mainRight"
     "mainLeftBottom mainRightBottom"
     }
 
+    .infoText {
+        font-size: 1rem;
+    }
+
+    .exp {
+        font-size: 1.5rem;
+    }
+
+    .exp, .education, .work {
+        padding-left: 1rem;
+    }
+
     .nameBig, .pictureJenny {
+    place-items: center;
+    align-content: center;
     font-size: 5rem;
     margin-bottom: 1.5rem;
     text-shadow: black 1px 0 10px;
@@ -132,7 +162,7 @@ body {
 /* Mobile */
 @media (max-width: 360px) 
 {
-    .grid {
+    .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.2fr 0.7fr 0.2fr 1fr;
     grid-template-areas: 
