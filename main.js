@@ -1,7 +1,8 @@
-window.addEventListener("DOMContentLoaded", main);
+window.addEventListener("DOMContentLoaded", showOnScroll);
 
-/**Funktion som skapar och fadear in en bild som visar mina jobberfarenheter */
-function main() {
+/**En funktion som med hjälp av intersection observer fadear in två bilder, 
+ * när användaren scrollar neråt på webbsidan */
+function showOnScroll() {
     const faders = document.querySelectorAll(".hidden");
     
     const appearOptions = {
@@ -19,7 +20,6 @@ function main() {
         },
         appearOptions
     );
-    
     
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
