@@ -100,7 +100,7 @@ body {
 .hidden {
     opacity: 0;
     transform: translateX(100px);
-    transition: 150ms;
+    transition: all 1000ms;
 }
 
 .hidden.show {

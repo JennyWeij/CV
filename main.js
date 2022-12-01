@@ -4,30 +4,26 @@ function main() {
     const faders = document.querySelectorAll(".hidden");
     
     const appearOptions = {
-        root: null,
-        threshold: 1,
-        rootMargin: "0px"
+        threshold: 0.6,
     };
     
     const appearOnScroll = new IntersectionObserver(
-        handleScrollIntersections,
+        function (entries) {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show')
+                    appearOnScroll.unobserve(entry.target);
+                }
+            }
+        },
         appearOptions
     );
     
-    function handleScrollIntersections(entries) {
-        console.log('SCROLL');
-        for (const entry of entries) {
-            console.log(entry.target, entry.intersectionRatio)
-            entry.target.style.opacity = entry.intersectionRatio;
-        }
-    }
     
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     })
 }
-
-
 
 /**Funktion som skapar och fadear in en bild som visar mina jobberfarenheter */
 
