@@ -11,18 +11,16 @@ body {
     font-family: 'Playfair Display SC', serif;
 }
 
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.6fr 0.1fr;
     grid-template-areas: 
     "hero hero"
     "mainLeft mainRight"
     "mainLeftBottom mainRightBottom"
+    "footer footer"
 }
-
-
 
 .nameBig {
     font-size: 7rem;
@@ -86,7 +84,6 @@ body {
 
 .footer {
     grid-area: footer;
-    display: flex;
 }
 
 .links {
@@ -104,10 +101,13 @@ body {
 
 .hidden {
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transform: translateX(100px);
+    transition: 350ms;
+    /* transition: opacity 250ms ease-in; */
 }
 
-.fade-in {
+.hidden.show {
+    transform: translateX();
     opacity: 1;
 }
 
