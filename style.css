@@ -19,7 +19,7 @@ body {
     "hero hero"
     "mainLeft mainRight"
     "mainLeftBottom mainRightBottom"
-    "footer footer"
+    "footer footer";
 }
 
 .nameBig {
@@ -129,7 +129,7 @@ body {
     "hero"
     "mainLeft mainRight"
     "mainLeftBottom mainRightBottom"
-    "footer footer"
+    "footer footer";
     }
 
     .infoText {
@@ -169,7 +169,8 @@ body {
     "mainRight"
     "mainLeftBottom"
     "mainRightBottom"
-    "footer"
+    "footer"; 
+    /* göra bilden mindre på mindre skärmar? */
     }
 
     .nameBig {
