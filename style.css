@@ -13,7 +13,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 1fr 1fr 1fr 0.1fr;
     grid-template-areas: 
     "hero hero"
@@ -67,7 +67,7 @@ body {
 
 .mainRight {
     grid-area: mainRight;
-    
+    height: auto;
 }
 
 .mainLeftBottom {
@@ -137,7 +137,7 @@ body {
     }
 
     .exp, .education, .work {
-        padding-left: 1rem;
+        padding-left: 5rem;
     }
 
     .nameBig, .pictureJenny {
@@ -157,7 +157,7 @@ body {
 {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 0.7fr 1fr 1fr 0.3fr;
+    grid-template-rows: 1fr 0.2fr 0.7fr 0.2fr 0.7fr 0.1fr;
     grid-template-areas: 
     "hero"
     "mainLeft"

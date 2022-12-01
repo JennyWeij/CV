@@ -1,10 +1,11 @@
 window.addEventListener("DOMContentLoaded", main);
 
+/**Funktion som skapar och fadear in en bild som visar mina jobberfarenheter */
 function main() {
     const faders = document.querySelectorAll(".hidden");
     
     const appearOptions = {
-        threshold: 0.6,
+        threshold: 0.3,
     };
     
     const appearOnScroll = new IntersectionObserver(
@@ -25,7 +26,4 @@ function main() {
     })
 }
 
-/**Funktion som skapar och fadear in en bild som visar mina jobberfarenheter */
 
-
-/**Funktion som skapar och fadear in en bild som visar mina utbildningar */
