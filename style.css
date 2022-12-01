@@ -14,7 +14,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0.6fr 0.1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.1fr;
     grid-template-areas: 
     "hero hero"
     "mainLeft mainRight"
@@ -62,17 +62,17 @@ body {
 
 .mainLeft {
     grid-area: mainLeft;
-    margin-top: 4rem;
-    height: auto;
+    margin-top: 2rem;
 }
 
 .mainRight {
     grid-area: mainRight;
+    
 }
 
 .mainLeftBottom {
     grid-area: mainLeftBottom;
-    margin-top: 4rem;
+    margin-top: 2rem;
     height: auto;
 }
 
@@ -157,13 +157,13 @@ body {
 {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 0.7fr 0.2fr 1fr 0.3;
+    grid-template-rows: 1fr 0.2fr 0.7fr 1fr 1fr 0.3fr;
     grid-template-areas: 
     "hero"
     "mainLeft"
     "mainRight"
     "mainLeftBottom"
-    "manRightBottom"
+    "mainRightBottom"
     "footer"
     }
 
