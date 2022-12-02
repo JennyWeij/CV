@@ -59,14 +59,14 @@ body {
     font-size: 2rem;
 }
 
-.expPictures {
-    max-width: 100%;
-    height: auto;
-}
-
 .mainLeft {
     grid-area: mainLeft;
     margin-top: 2rem;
+}
+
+.expPictures {
+    max-width: 100%;
+    height: auto;
 }
 
 .mainRight {
@@ -112,6 +112,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
+
 .bottomColor {
     color: #707070;
 }

@@ -11,9 +11,19 @@
     "footer footer";
     }
 
+    .nameBig, .pictureJenny {
+        place-items: center;
+        align-content: center;
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+        text-shadow: black 1px 0 10px;
+        justify-self: auto;
+        margin-left: 2rem;
+    }
+
     .links {
         font-size: 0.7rem;
-        }
+    }
 
     .infoText {
         font-size: 1rem;
@@ -33,21 +43,11 @@
         height: auto;
     }
 
-    .nameBig, .pictureJenny {
-        place-items: center;
-        align-content: center;
-        font-size: 5rem;
-        margin-bottom: 1.5rem;
-        text-shadow: black 1px 0 10px;
-        justify-self: auto;
-        margin-left: 2rem;
-    }
-
     .final {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1rem;
         margin-bottom: 1rem;
-}
+    }
 }
