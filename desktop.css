@@ -64,7 +64,6 @@ body {
     height: auto;
 }
 
-
 .mainLeft {
     grid-area: mainLeft;
     margin-top: 2rem;
@@ -72,7 +71,7 @@ body {
 
 .mainRight {
     grid-area: mainRight;
-    height: auto;
+    height: 100%;
 }
 
 .mainLeftBottom {
@@ -82,7 +81,7 @@ body {
 
 .mainRightBottom {
     grid-area: mainRightBottom;
-    height: auto;
+    height: 100%;
 }
 
 .footer {
