@@ -6,7 +6,7 @@ function showOnScroll() {
     const faders = document.querySelectorAll(".hidden");
     
     const appearOptions = {
-        threshold: 0.3,
+        threshold: 0.7,
     };
     
     const appearOnScroll = new IntersectionObserver(
