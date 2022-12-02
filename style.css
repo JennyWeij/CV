@@ -79,14 +79,25 @@ body {
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: footer;
     align-content: center;
+}
+
+.allLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .links {
     color: #83A5B8;
     text-decoration: none;
     text-shadow: #83A5B8 1px 0 5px;
+
 }
 
 .final {
