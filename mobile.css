@@ -3,7 +3,7 @@
 {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 0.7fr 0.2fr 0.7fr 0.1fr;
+    grid-template-rows: 0.8fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr;
     grid-template-areas: 
     "hero"
     "mainLeft"
@@ -11,7 +11,6 @@
     "mainLeftBottom"
     "mainRightBottom"
     "footer"; 
-    /* göra bilden mindre på mindre skärmar? */
     }
 
     .nameBig {
@@ -19,11 +18,26 @@
     margin-bottom: 1.5rem;
     text-shadow: black 1px 0 10px;
     }
+  
+    .links {
+    font-size: 0.5rem;
+    }
 
     .infoText {
     font-size: 0.8rem;
     max-width: 80%;
     }
+
+    .experienceText, .education, .work {
+        padding-left: 0;
+    }
+
+    .mainLeft {
+        grid-area: mainLeft;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
 
     .final {
     display: flex;

@@ -20,6 +20,14 @@ body {
     "footer footer";
 }
 
+.hero {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .nameBig {
     font-size: 7rem;
     margin-bottom: 2rem;
@@ -39,24 +47,22 @@ body {
     max-width: 80%;
 }
 
-.exp {
+.experienceBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experienceText {
     font-size: 2rem;
 }
 
-.experience {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.expPictures {
+    max-width: 100%;
+    height: auto;
 }
 
-.hero {
-    grid-area: hero;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .mainLeft {
     grid-area: mainLeft;

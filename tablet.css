@@ -3,7 +3,7 @@
 {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 1fr;
     grid-template-areas: 
     "hero"
     "mainLeft mainRight"
@@ -13,25 +13,37 @@
 
     .infoText {
         font-size: 1rem;
-        max-width: 70%;
+        max-width: 80%;
     }
 
-    .exp {
-        font-size: 1.5rem;
+    .experienceText, .education, .work {
+        padding-left: 3rem;
     }
 
-    .exp, .education, .work {
-        padding-left: 4rem;
+    .experienceText {
+        font-size: 1.2rem;
+    }
+
+    .expPictures {
+        max-width: 100%;
+        height: auto;
     }
 
     .nameBig, .pictureJenny {
-    place-items: center;
-    align-content: center;
-    font-size: 5rem;
-    margin-bottom: 1.5rem;
-    text-shadow: black 1px 0 10px;
-    justify-self: auto;
-    margin-left: 2rem;
+        place-items: center;
+        align-content: center;
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+        text-shadow: black 1px 0 10px;
+        justify-self: auto;
+        margin-left: 2rem;
     }
 
+    .final {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+}
 }
