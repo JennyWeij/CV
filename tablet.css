@@ -3,7 +3,7 @@
 {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 0.4fr;
     grid-template-areas: 
     "hero"
     "mainLeft mainRight"
@@ -20,8 +20,8 @@
         padding-left: 3rem;
     }
 
-    .experienceText {
-        font-size: 1.2rem;
+    .experienceText, .final {
+        font-size: 1.5rem;
     }
 
     .expPictures {
