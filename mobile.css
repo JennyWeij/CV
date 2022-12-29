@@ -26,13 +26,13 @@
     }
     
     .links {
-    font-size: 0.5rem;
-    margin: 0.2rem;
+        font-size: 0.5rem;
+        margin: 0.2rem;
     }
 
     .infoText {
-    font-size: 0.8rem;
-    max-width: 80%;
+        font-size: 0.8rem;
+        max-width: 80%;
     }
 
     .experienceText, .education, .work {
@@ -50,9 +50,9 @@
     }
 
     .final {
-    display: flex;
-    justify-content: center;
-    font-size: 0.8rem;
-    margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
     }
 } 
